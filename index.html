@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueBank — Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="logo">B</div>
+            <div>
+                <h2>BlueBank — Demo</h2>
+                <p>A responsive HTML/CSS banking UI (demo). Deposit, withdraw, and see transaction history.</p>
+            </div>
+        </header>
+
+        <div class="card-big">
+
+            <!-- LEFT SECTION -->
+            <div class="left-section">
+
+                <p class="label">Account Balance</p>
+                <h1 id="balance">₹0.00</h1>
+                <p class="acc">Acc • 0123 4567</p>
+
+                <div class="action-row">
+                    <button id="depositBtn" class="action-btn deposit-btn">Deposit</button>
+                    <button id="withdrawBtn" class="action-btn withdraw-btn">Withdraw</button>
+                </div>
+
+                <label class="amount-label">Amount</label>
+
+                <div class="submit-row">
+                    <input type="number" id="amount" placeholder="Amount (₹)">
+                    <button id="submitBtn" class="submit-btn submit-deposit">Submit</button>
+                </div>
+
+                <p class="tip">Tip: You can click Deposit or Withdraw to pre-select the action, then enter an amount and submit.</p>
+
+            </div>
+
+            <!-- RIGHT SECTION -->
+            <div class="right-section">
+
+                <h3>Transaction History</h3>
+
+                <div id="historyList" class="history-box"></div>
+
+                <div class="bottom-buttons">
+                    <button id="clearBtn">Clear History</button>
+                    <button id="resetBtn">Reset Balance</button>
+                    <button id="exportBtn">Export CSV</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

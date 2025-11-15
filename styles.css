@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    background: #0f172a;
+    color: #e8eefc;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(135deg, #60a5fa, #34d399);
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #022;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BIG CARD */
+.card-big {
+    background: #111d33;
+    padding: 30px;
+    border-radius: 18px;
+    display: flex;
+    gap: 35px;
+}
+
+/* LEFT SECTION */
+.left-section {
+    flex: 1;
+}
+
+.label {
+    margin-bottom: -5px;
+    color: #b9c5d9;
+    font-size: 15px;
+}
+
+.acc {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.action-row {
+    display: flex;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.deposit-btn { background: #22c55e; color: #022; }
+.withdraw-btn { background: #3b82f6; }
+
+.amount-label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.submit-row {
+    display: flex;
+    gap: 12px;
+}
+
+#amount {
+    flex: 1;
+    padding: 12px;
+    background: #0f172a;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid #324056;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Dynamic submit button colors */
+.submit-deposit {
+    background: #22c55e !important;
+    color: #022 !important;
+}
+
+.submit-withdraw {
+    background: #3b82f6 !important;
+    color: white !important;
+}
+
+.tip {
+    margin-top: 18px;
+    color: #8fa2bd;
+    font-size: 13px;
+}
+
+/* RIGHT SECTION */
+.right-section {
+    flex: 1;
+}
+
+.history-box {
+    background: #0d1629;
+    padding: 15px;
+    border-radius: 12px;
+    max-height: 330px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.history-item {
+    padding: 10px;
+    background: #182844;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.bottom-buttons button {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    background: #1e293b;
+    color: white;
+    border: 1px solid #324056;
+    cursor: pointer;
+}
